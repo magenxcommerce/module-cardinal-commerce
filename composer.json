@@ -1,0 +1,31 @@
+{
+    "name": "magenxcommerce/module-cardinal-commerce",
+    "description": "Provides a possibility to enable 3-D Secure 2.0 support for payment methods.",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.0.13||~7.1.0||~7.2.0",
+        "magenxcommerce/framework": "101.0.*",
+        "magenxcommerce/module-checkout": "100.2.*",
+        "magenxcommerce/module-payment": "100.2.*",
+        "magenxcommerce/module-store": "100.2.*"
+    },
+    "type": "magento2-module",
+    "version": "100.2.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\CardinalCommerce\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-cardinal-commerce": "*"
+    }
+}
